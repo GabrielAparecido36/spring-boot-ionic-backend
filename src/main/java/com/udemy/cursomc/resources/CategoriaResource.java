@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.udemy.cursomc.domain.Categoria;
-import com.udemy.cursomc.domain.Categoria;
 import com.udemy.cursomc.services.CategoriaService;
 
 @RestController
