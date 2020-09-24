@@ -33,7 +33,7 @@ public class Pedido implements Serializable {
 	
 	@ManyToOne
 	@JoinColumn(name="endereco_de_entrega_id")
-	private Endereco endrecoDeEntrega;
+	private Endereco enderecoDeEntrega;
 	
 
 	@OneToMany(mappedBy = "id.pedido")
@@ -48,7 +48,7 @@ public class Pedido implements Serializable {
 		this.id = id;
 		this.instante = instante;
 		this.cliente = cliente;
-		this.endrecoDeEntrega = endrecoDeEntrega;
+		this.enderecoDeEntrega = endrecoDeEntrega;
 	}
 	
 	
@@ -85,12 +85,12 @@ public class Pedido implements Serializable {
 		this.cliente = cliente;
 	}
 
-	public Endereco getEndrecoDeEntrega() {
-		return endrecoDeEntrega;
+	public Endereco getEnderecoDeEntrega() {
+		return enderecoDeEntrega;
 	}
 
-	public void setEndrecoDeEntrega(Endereco endrecoDeEntrega) {
-		this.endrecoDeEntrega = endrecoDeEntrega;
+	public void setEnderecoDeEntrega(Endereco endrecoDeEntrega) {
+		this.enderecoDeEntrega = endrecoDeEntrega;
 	}
 	
 	public Set<ItemPedido> getItens() {
